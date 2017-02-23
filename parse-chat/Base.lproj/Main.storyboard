@@ -71,16 +71,16 @@
                     <connections>
                         <outlet property="passwordTextField" destination="baD-7A-l51" id="QS7-LR-75H"/>
                         <outlet property="usernameTextField" destination="JgF-3s-Kvo" id="CZc-X7-lde"/>
-                        <segue destination="K4P-PU-oTR" kind="presentation" identifier="login-segue" id="I51-We-vaQ"/>
+                        <segue destination="Aa8-Ak-Yeo" kind="presentation" identifier="login-segue" id="I51-We-vaQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Chat-->
         <scene sceneID="Xa9-lQ-2gd">
             <objects>
-                <viewController id="K4P-PU-oTR" sceneMemberID="viewController">
+                <viewController id="K4P-PU-oTR" customClass="ChatViewController" customModule="parse_chat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rla-Zb-Myw"/>
                         <viewControllerLayoutGuide type="bottom" id="aOM-zG-WzI"/>
@@ -88,12 +88,77 @@
                     <view key="view" contentMode="scaleToFill" id="Ea4-kj-Rf4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MIz-64-8WE">
+                                <rect key="frame" x="0.0" y="64" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeX-cF-PTC">
+                                <rect key="frame" x="334" y="63" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="ComposeMessage:" destination="K4P-PU-oTR" eventType="touchDown" id="Ans-Xt-32X"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ahg-SA-F9L">
+                                <rect key="frame" x="6" y="95" width="369" height="572"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" rowHeight="62" id="hST-Y2-Bma">
+                                        <rect key="frame" x="0.0" y="28" width="369" height="62"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hST-Y2-Bma" id="hR8-gg-PuD">
+                                            <rect key="frame" x="0.0" y="0.0" width="369" height="61"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oed-0J-ZHc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="369" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Chat" id="5Zz-32-ys0"/>
+                    <connections>
+                        <outlet property="chatTextField" destination="MIz-64-8WE" id="Mb0-mw-vOo"/>
+                        <outlet property="messageLabel" destination="Oed-0J-ZHc" id="5tt-Aa-NmX"/>
+                        <outlet property="messageTableView" destination="Ahg-SA-F9L" id="x8b-tO-Y4e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02Y-g4-VSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="737" y="35"/>
+            <point key="canvasLocation" x="1768.8" y="43.628185907046479"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NeZ-Yk-JfN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Aa8-Ak-Yeo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wM1-Ag-jqN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="K4P-PU-oTR" kind="relationship" relationship="rootViewController" id="JZN-LX-fa4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0N-yD-4m7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829.60000000000002" y="43.628185907046479"/>
         </scene>
     </scenes>
 </document>
