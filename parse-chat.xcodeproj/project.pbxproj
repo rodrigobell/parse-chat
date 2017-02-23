@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F9EF9B71E5E827A00B22F72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9EF9B61E5E827A00B22F72 /* AppDelegate.swift */; };
-		4F9EF9B91E5E827A00B22F72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9EF9B81E5E827A00B22F72 /* ViewController.swift */; };
+		4F9EF9B91E5E827A00B22F72 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9EF9B81E5E827A00B22F72 /* LoginViewController.swift */; };
 		4F9EF9BC1E5E827A00B22F72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9EF9BA1E5E827A00B22F72 /* Main.storyboard */; };
 		4F9EF9BE1E5E827A00B22F72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F9EF9BD1E5E827A00B22F72 /* Assets.xcassets */; };
 		4F9EF9C11E5E827A00B22F72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9EF9BF1E5E827A00B22F72 /* LaunchScreen.storyboard */; };
@@ -45,7 +45,7 @@
 		4DCCA85D83C94014A4673FA9 /* Pods-parse-chatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parse-chatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-parse-chatUITests/Pods-parse-chatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F9EF9B31E5E827A00B22F72 /* parse-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "parse-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9EF9B61E5E827A00B22F72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F9EF9B81E5E827A00B22F72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F9EF9B81E5E827A00B22F72 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4F9EF9BB1E5E827A00B22F72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F9EF9BD1E5E827A00B22F72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F9EF9C01E5E827A00B22F72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				4F9EF9B61E5E827A00B22F72 /* AppDelegate.swift */,
-				4F9EF9B81E5E827A00B22F72 /* ViewController.swift */,
+				4F9EF9B81E5E827A00B22F72 /* LoginViewController.swift */,
 				4F9EF9BA1E5E827A00B22F72 /* Main.storyboard */,
 				4F9EF9BD1E5E827A00B22F72 /* Assets.xcassets */,
 				4F9EF9BF1E5E827A00B22F72 /* LaunchScreen.storyboard */,
@@ -446,7 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F9EF9B91E5E827A00B22F72 /* ViewController.swift in Sources */,
+				4F9EF9B91E5E827A00B22F72 /* LoginViewController.swift in Sources */,
 				4F9EF9B71E5E827A00B22F72 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -698,6 +698,7 @@
 				4F9EF9DD1E5E827A00B22F72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F9EF9DE1E5E827A00B22F72 /* Build configuration list for PBXNativeTarget "parse-chatTests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +707,7 @@
 				4F9EF9E01E5E827A00B22F72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F9EF9E11E5E827A00B22F72 /* Build configuration list for PBXNativeTarget "parse-chatUITests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +716,7 @@
 				4F9EF9E31E5E827A00B22F72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
