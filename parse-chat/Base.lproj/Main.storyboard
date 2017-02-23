@@ -134,13 +134,12 @@
                     <navigationItem key="navigationItem" title="Chat" id="5Zz-32-ys0"/>
                     <connections>
                         <outlet property="chatTextField" destination="MIz-64-8WE" id="Mb0-mw-vOo"/>
-                        <outlet property="messageLabel" destination="Oed-0J-ZHc" id="5tt-Aa-NmX"/>
                         <outlet property="messageTableView" destination="Ahg-SA-F9L" id="x8b-tO-Y4e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02Y-g4-VSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1768.8" y="43.628185907046479"/>
+            <point key="canvasLocation" x="1636" y="124"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NeZ-Yk-JfN">
@@ -158,7 +157,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g0N-yD-4m7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="829.60000000000002" y="43.628185907046479"/>
+            <point key="canvasLocation" x="918" y="124"/>
         </scene>
     </scenes>
 </document>

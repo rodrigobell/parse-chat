@@ -117,12 +117,12 @@
 			isa = PBXGroup;
 			children = (
 				4F9EF9B61E5E827A00B22F72 /* AppDelegate.swift */,
+				497613C01E5E8C6600B9E397 /* ChatViewController.swift */,
 				4F9EF9B81E5E827A00B22F72 /* LoginViewController.swift */,
 				4F9EF9BA1E5E827A00B22F72 /* Main.storyboard */,
 				4F9EF9BD1E5E827A00B22F72 /* Assets.xcassets */,
 				4F9EF9BF1E5E827A00B22F72 /* LaunchScreen.storyboard */,
 				4F9EF9C21E5E827A00B22F72 /* Info.plist */,
-				497613C01E5E8C6600B9E397 /* ChatViewController.swift */,
 			);
 			path = "parse-chat";
 			sourceTree = "<group>";

@@ -11,7 +11,6 @@ import Parse
 
 class ChatViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet var messageLabel: UILabel!
     @IBOutlet var messageTableView: UITableView!
     @IBOutlet var chatTextField: UITextField!
     var messageArray: [String] = []
